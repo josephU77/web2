@@ -1,17 +1,40 @@
-let numeroMaquina = Math.floor(Math.random() * 10) + 1;
-let vidas = 5;
+let n1 = parseInt(prompt("agregue el primer numero"));
+let n2 = parseInt(prompt("agregue el segundo numero"));
 
-console.log(numeroMaquina);
-
-let numeroUsuario = parseInt(prompt("Adivina el número (1-10)"));
-
-while (numeroMaquina !== numeroUsuario && vidas > 1) {
-    vidas--;
-    numeroUsuario = parseInt(prompt("Número incorrecto, intenta de nuevo. Vidas restantes: " + vidas));
+function suma(n1, n2){
+    return parseInt(n1) + parseInt(n2);
 }
 
-if (numeroMaquina === numeroUsuario) {
-    alert("¡Felicidades! Adivinaste el número.");
-} else {
-    alert("¡Perdiste! El número era " + numeroMaquina);
+function resta(n1, n2){
+    return parseInt(n1) - parseInt(n2);
+}
+
+function division(n1, n2){
+    return parseInt(n1) / parseInt(n2);
+}
+
+function modulo(n1, n2){
+    return parseInt(n1) % parseInt(n2);
+}
+
+let opcion = parseInt(prompt(`seleccione una opcion:
+    1. suma
+    2. resta
+    3. division
+    4. modulo`))
+switch(opcion){
+    case 1:
+        console.log(suma(n1,n2));
+    break;
+    case 2:
+        console.log(resta(n1,n2));
+    break;
+    case 3:
+        console.log(division(n1,n2));
+    break;
+    case 4:
+        console.log(modulo(n1,n2));
+    break;
+    default:
+        console.log("error")
 }
