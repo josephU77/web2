@@ -1,0 +1,17 @@
+{
+    "name": "node",
+    "version": "1.0.0",
+    "description": "Proyecto de primer servidor de ICO",
+    "main": "app.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+       "Server",
+       "node"
+  
+  ],
+    "author": "JosephVega",
+    "license": "ISC",
+    "description": ""
+  }
