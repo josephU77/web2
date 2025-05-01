@@ -1,0 +1,17 @@
+.calculadora{
+    width: 250px;
+    margin: 50px auto;
+    border: 2px solid purple;
+    padding: 10px;
+    border-radius:5px ;
+    background-color: aqua;
+
+}
+input [type ="button"]{
+    width: 60px;
+    margin: 5px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
