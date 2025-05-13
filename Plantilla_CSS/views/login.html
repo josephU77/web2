@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Aplicación de Rutas</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-brand">RutasApp</div>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="/" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="/login" class="nav-link active">Login</a></li>
+                <li class="nav-item"><a href="/about" class="nav-link">Acerca de</a></li>
+                <li class="nav-item"><a href="/contact" class="nav-link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Iniciar Sesión</h1>
+        
+        <div class="form-container">
+            <form action="/login" method="POST">
+                <div class="form-group">
+                    <label for="user" class="form-label">Usuario:</label>
+                    <input type="text" id="user" name="user" class="form-control" required maxlength="25" placeholder="Ingresa tu usuario">
+                </div>
+                
+                <div class="form-group">
+                    <label for="password" class="form-label">Contraseña:</label>
+                    <input type="password" id="password" name="password" class="form-control" required maxlength="8" placeholder="Ingresa tu contraseña">
+                </div>
+                
+                <div class="form-group">
+                    <button type="submit" class="btn btn-block">Iniciar Sesión</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 RutasApp - Proyecto de Express con múltiples rutas</p>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>
